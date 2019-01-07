@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>tab menu</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+  .container{width: 500px; margin: 50px auto;}
+  ul.tab:after{content:""; display: block; clear: both;}
+
+  ul.tab li{float: left; height: 40px; background: #e9eff8; width: 100px; border-radius: 10px 10px 0 0;}
+  ul.tab li a{display: block;line-height: 40px; text-align: center;}
+  ul.tab li.selected{background: #c1d2f2;}
+  .container div{border: 1px solid #9fb7d4; border-top: none; padding:10px;}
+  </style>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+ </head>
+ <body>
+	<div class="container">
+		<ul class="tab">
+			<li class="selected"><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+		</ul>
+		<!-- div*5>{$.}+lorem20 -->
+		 <div>1.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, ipsam, nemo perferendis animi in voluptatum necessitatibus distinctio placeat quasi nesciunt.</div>
+		 <div>2.Laborum, ipsa, aspernatur, maxime, commodi quasi deserunt excepturi ad possimus exercitationem unde accusantium illum sint odio ab autem impedit placeat.</div>
+		 <div>3.Error, dolorem, omnis, labore nostrum harum distinctio quisquam pariatur sequi optio non esse consectetur at obcaecati et excepturi. Maiores, officiis.</div>
+		 <div>4.Deserunt, ab, consectetur vel voluptates dicta nisi cumque odit est praesentium fugiat dolore molestias excepturi eaque facilis debitis nobis veniam?</div>
+		 <div>5.Corrupti, perspiciatis, voluptas vel animi ullam dignissimos aperiam molestias itaque ipsa aliquid odio molestiae mollitia quidem quam facilis amet minus!</div>
+	</div>
+ </body>
+</html>
