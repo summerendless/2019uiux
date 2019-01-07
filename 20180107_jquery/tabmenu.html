@@ -28,7 +28,7 @@
 			$("ul.tab li").removeClass("selected");
 			$(this).addClass("selected");
 			$(".container div").hide();
-			$(".container div").eq($i).show(); //자기 자신의 인덱스 값
+			$(".container div").eq(i).show(); //자기 자신의 인덱스 값
 			console.log($(this).index());
 		});
 	});
