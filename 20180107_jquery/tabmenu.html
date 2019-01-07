@@ -14,15 +14,30 @@
 
   ul.tab li{float: left; height: 40px; background: #e9eff8; width: 100px; border-radius: 10px 10px 0 0;}
   ul.tab li a{display: block;line-height: 40px; text-align: center;}
-  ul.tab li.selected{background: #c1d2f2;}
+  ul.tab li.selected{background: #c1d2f2;} 
   .container div{border: 1px solid #9fb7d4; border-top: none; padding:10px;}
   </style>
   <script src="../js/jquery-3.3.1.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		$("ul.tab li").eq(0).addClass("selected");
+		$(".container div").hide();
+		$(".container div").eq(0).show();
+		$("ul.tab li").click(function(){
+			var $i = $(this).index();
+			$("ul.tab li").removeClass("selected");
+			$(this).addClass("selected");
+			$(".container div").hide();
+			$(".container div").eq($i).show(); //자기 자신의 인덱스 값
+			console.log($(this).index());
+		});
+	});
+  </script>
  </head>
  <body>
 	<div class="container">
 		<ul class="tab">
-			<li class="selected"><a href="#">menu1</a></li>
+			<li><a href="#">menu1</a></li>
 			<li><a href="#">menu2</a></li>
 			<li><a href="#">menu3</a></li>
 			<li><a href="#">menu4</a></li>
