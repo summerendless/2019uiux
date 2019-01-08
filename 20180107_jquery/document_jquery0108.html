@@ -29,10 +29,10 @@
 			//find 전체에서 안쪽 큰 거 찾을떄
 			//filter 자손
 
-			//	$("#content li").get(0).style.border="4px solid #f00");
-			//	$("#content li")[0].style.border="4px solid #f00");
-			//	$("#content li").eq(0).css("border","4px solid #f00");
-			//	$("#content li:eq(0)").css("border","4px solid #f00"); 427pg
+            // $("#content li").get(0).style.border="4px solid #f00";
+            // $("#content li")[0].style.border="4px solid #f00";
+            // $("#content li").eq(0).css("border","4px solid #f00");
+            // $("#content li:eq(0)").css("border","4px solid #f00"); 427pg
 
 			//$("#samplePage").children(".test1").css("border","4px solid #f00");
 			//$("#samplePage").children().eq(0),css("border","4px solid #f00");
@@ -45,23 +45,11 @@
 			//var $menu = $("ul.menu");
 			//$menu.parent(".page").css("border","4px solid #00f);
 
-			var $select=$("ul.menu li.select");
-			$select.prev().css("border","4px solid #f00");
-			$select.nextAll().css("border","4px solid #f00");
-
-
+			var $select = $("ul.menu li.select");
+            // $select.prev().css("border","4px solid #f00");
+            $select.nextAll().css("border","4px solid #f00");
 
 		});
-
-/*
- $(document).ready(function(){
-            // $("ul.menu li").click(function(){
-            //     alert($(this).index());
-            // });
-            // $("#content li").get(0).style.border="4px solid #f00";
-            // $("#content li")[0].style.border="4px solid #f00";
-            // $("#content li").eq(0).css("border","4px solid #f00");
-            // $("#content li:eq(0)").css("border","4px solid #f00");
             // $("#samplePage").find(".test1").css("border","4px solid #f00");
             // $("#samplePage").children().last().css("border","4px solid #f00");
             // var $menu = $("ul.menu");
@@ -70,12 +58,8 @@
             // $children.last().css("border","4px solid #0f0");
             // var $menu = $("ul.menu");
             // $menu.parents().css("border","4px solid #00f");
-            var $select = $("ul.menu li.select");
-            // $select.prev().css("border","4px solid #f00");
-            $select.nextAll().css("border","4px solid #f00");
-            
-        });
-		*/
+  
+		
 	</script>
 	
 	</head>
