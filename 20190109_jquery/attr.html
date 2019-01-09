@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>attribute</title>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		//console.log($(".header img").attr("src"));
+		$("#btn").click(function(){
+			$(".header img").attr("src","../images/fish1.png");
+		});
+	});
+  </script>
+ </head>
+ <body>
+ <button id="btn">버튼</button>
+  <div class="header">
+	<img src="../images/testimg.jpg" alt="이미지">
+  </div>
+ </body>
+</html>
