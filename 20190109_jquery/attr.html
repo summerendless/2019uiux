@@ -3,13 +3,23 @@
  <head>
   <meta charset="UTF-8">
   <title>attribute</title>
+  <style>
+	img{width: 300px;height: 300px;}
+  </style>
   <script src="../js/jquery-3.3.1.min.js"></script>
   <script>
 	$(document).ready(function(){
 		//console.log($(".header img").attr("src"));
-		$("#btn").click(function(){
-			$(".header img").attr("src","../images/fish1.png");
+		//$("#btn").click(function(){
+		//	$(".header img").attr("src","../images/fish1.png");
+		//});
+		$(".header img").hover(function(){
+			$(this).attr("src", "../images/fish1.png");
+		},function(){
+			$(this).attr("src", "../images/testimg.jpg");
 		});
+
+		
 	});
   </script>
  </head>
