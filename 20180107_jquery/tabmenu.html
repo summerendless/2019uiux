@@ -19,17 +19,33 @@
   </style>
   <script src="../js/jquery-3.3.1.min.js"></script>
   <script>
+	/*
+	
 	$(document).ready(function(){
 		$("ul.tab li").eq(0).addClass("selected");
 		$(".container div").hide();
 		$(".container div").eq(0).show();
 		$("ul.tab li").click(function(){
-			var $i = $(this).index();
-			$("ul.tab li").removeClass("selected");
+			//var $i = $(this).index();
+			$("ul.tab li").removeClass();//"selected");
 			$(this).addClass("selected");
 			$(".container div").hide();
-			$(".container div").eq(i).show(); //자기 자신의 인덱스 값
-			console.log($(this).index());
+			//$(".container div").eq(i).show(); //자기 자신의 인덱스 값
+			$(".container div").eq($(this).index()).show();
+			//console.log($(this).index());
+		});
+	}); 
+	*/
+
+	$(document).ready(function(){
+		$("ul.tab li").eq(0).addClass("selected");
+		$(".container div").hide();
+		$(".container div").eq(0).show();
+		$("ul.tab li").click(function(){
+			$("ul.tab li").removeClass();
+			$(this).addClass("selected");
+			$(".container div").hide();
+			$(".container div").eq($(this).index()).show();
 		});
 	});
   </script>
