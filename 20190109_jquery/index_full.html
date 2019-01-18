@@ -42,7 +42,20 @@
 				menu:"#topMenu",
 				'afterLoad':function(anchorsLink,index){
 					console.log(index);
+					if (index == 2){		$(document).ready(function(){
+			$("#fullpage").fullpage({
+				anchor:["1st","2st","3st","4st"],
+				menu:"#topMenu",
+				'afterLoad':function(anchorsLink,index){
+					console.log(index);
 					if (index == 2){
+						$(".onview").addClass("mactive");
+					}else{
+						$(".onview").removeClass("mactive");
+					}
+				}
+			});
+		});
 						$(".onview").addClass("mactive");
 					}else{
 						$(".onview").removeClass("mactive");
