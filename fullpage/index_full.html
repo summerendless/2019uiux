@@ -40,6 +40,7 @@
 			$("#fullpage").fullpage({
 				anchor:["1st","2st","3st","4st"],
 				menu:"#topMenu",
+				navigation: true,
 				'afterLoad':function(anchorsLink,index){
 					console.log(index);
 					if (index == 2){		$(document).ready(function(){
