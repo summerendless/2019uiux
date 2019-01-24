@@ -28,7 +28,7 @@
 		<a href="#" class="btn btn-info">button</a>
 	</div>
 	<div class="container">
-<div class="btn-group">
+			<div class="btn-group">
 			<div class="btn btn-outline-primary">button</div>
 			<button class="btn btn-outline-primary">button</button>
 			<a href="#" class="btn btn-outline-primary">button</a>
@@ -60,12 +60,10 @@
 				<a href="#menu3" class="nav-link"data-toggle="tab">link</a>
 			</li>
 		</ul>
-		<div class="container">
-			<div class="tab-content">
-				<div class="tab-pane active" id="menu1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sequi.1111</div>
-				<div class="tab-pane fade" id="menu2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sequi.2222</div>
-				<div class="tab-pane fade" id="menu3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sequi.3333</div>
-			</div>
+		<div class="tab-content">
+				<div class="tab-pane active" id="menu1"><div class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sequi.1111</div></div>
+				<div class="tab-pane" id="menu2"><div class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sequi.2222</div></div>
+				<div class="tab-pane" id="menu3"><div class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sequi.3333</div></div>
 		</div>
 	</div>
 	
@@ -125,18 +123,21 @@
 		</ul>
 		<style>
 			.carousel-item{position: relative;}
-			.carousel-item > h3{width: 500px; margin-left: -250px; position: absolute; top: 0; color:white; left: 50%;top: 50%;transform:translateY(-50%, -50%,0);}
+			.carousel-item img{width:100%;}
+			.carousel-item > h2{width:500px;position: absolute;color:white;left:50%;top:40%;margin-left:-250px;text-align:center;animation-duration: 2s;}
 		</style>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="../images/pc01.jpg" alt="img01">
-				<h3 class="animate fadeInUp animated">Lorem ipsum dolor sit amet.</h3>
+				<img src="../images/pc01.jpg" alt="img01" class="animate fadeInUp animated">
+				<h2 class="bounce animated">Lorem ipsum dolor sit amet.</h2>
 			</div>
 			<div class="carousel-item">
-				<img src="../images/pc02.jpg" alt="img02">
+				<img src="../images/pc02.jpg" alt="img01" class="animate jello animated">
+				<h2 class="fadeInUp animated">Lorem ipsum dolor sit amet.</h2>
 			</div>
 			<div class="carousel-item">
-				<img src="../images/pc03.jpg" alt="img03">
+				<img src="../images/pc03.jpg" alt="img01" class="animate shake animated">
+				<h2 class="bounce animated">Lorem ipsum dolor sit amet.</h2>
 			</div>
 		</div>
 		<a href="#demo" class="carousel-control-prev" data-slide="prev">
