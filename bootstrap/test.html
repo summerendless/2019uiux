@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<style>
+		.container{margin-bottom: 20px;}
+	</style>
+ </head>
+ <body>
+  <div class="container">
+	<nav class="navbar bg-dark navbar-expand-sm navbar-dark fixed-top">
+		<a href="#" class="navbar-brand">LOGO</a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#menuNavbar">
+			<span class="navbar-toggle-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="menuNavbar">
+			<ul class="navbar-nav ml-auto text-center">
+				<li class="nav-item">
+					<a href="#" class="nav-link">link1</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">link1</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">link1</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="#" class="dropdown-item">sublink</a>
+						<a href="#" class="dropdown-item">sublink</a>
+						<a href="#" class="dropdown-item">sublink</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+  </div>
+
+  <div class="container-flud p-0 m-0">
+	<div id="demo" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<li data-target="#demo" data-slide-to="0" class="active"></li>
+			<li data-target="#demo" data-slide-to="1" ></li>
+			<li data-target="#demo" data-slide-to="2" ></li>
+		</ul>
+		<style>
+			.carousel-item{position: relative;}
+			.carousel-item img{width: 100%;}
+			.carousel-item > h2{width: 500px; position: absolute; color:white; left: 50%; top: 40%; margin-left: -250px; text-align: center; animation-duration:2s;}
+		</style>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="../images/pc01.jpg" alt="img01" class="animate fadeInUp animated">
+				<h2 class="bounce animated">Lorem ipsum dolor sit amet.</h2>
+			</div>
+			<div class="carousel-item">
+				<img src="../images/pc02jpg" alt="img02" class="animate jello animated">
+				<h2 class="bounce animated">Lorem ipsum dolor sit amet.</h2>
+			</div>
+			<div class="carousel-item">
+				<img src="../images/pc03.jpg" alt="img03" class="animate shake animated">
+				<h2 class="bounce animated">Lorem ipsum dolor sit amet.</h2>
+			</div>
+		</div>
+		<a href="#demo" class="carousel-control-prev" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a href="#demo" class="carousel-control-next" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+  </div>
+
+  <div class="container">
+	<div class="row">
+		<div class="col-md-4 bg-primary text-center">1</div>
+		<div class="col-md-4 bg-primary text-center">2</div>
+		<div class="col-md-4 bg-primary text-center">3</div>
+	</div>
+  </div>
+  <div class="container">
+	<div class="btn btn-primary">button</div>
+	<button class="btn btn-primary">button</button>
+	<a href="#" class="btn btn-info">button</a>
+  </div>
+  <div class="container">
+	<div class="btn-group">
+		<div class="btn btn-outline-primary">button</div>
+		<button class="btn btn-outline-primary">button</button>
+		<a href="#" class="btn btn-outline-primary">button</a>
+	</div>
+  </div>
+  <div class="container">
+	<div class="btn-group">
+		<button class="btn btn-primary">apple</button>
+		<button class="btn btn-primary">samsung</button>
+		<div class="btn-group">
+			<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">sony</button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">submenu1</a>
+				<a href="#" class="dropdown-item">submenu2</a>
+				<a href="#" class="dropdown-item">submenu3</a>
+			</div>
+		</div>
+	</div>
+  </div>
+  <div class="container">
+	<ul class="nav nav-item">
+		<li class="nav-item">
+			<a href="#menu1" class="nav-link active" data-toggle="tab">link</a>
+		</li>
+		<li class="nav-item">
+			<a href="#menu2" class="nav-link" data-toggle="tab">link</a>
+		</li>
+		<li class="nav-item">
+			<a href="#menu3" class="nav-link" data-toggle="tab">link</a>
+		</li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane active" id="menu1"><div class="">Lorem ipsum dolor sit amet.-1</div></div>
+		<div class="tab-pane" id="menu2"><div class="">Lorem ipsum dolor sit amet.-2</div></div>
+		<div class="tab-pane" id="menu3"><div class="">Lorem ipsum dolor sit amet.-3</div></div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">title</h4>
+					<p class="card-text">Lorem ipsum dolor sit amet.</p>
+					<a href="#" class="card-link btn btn-primary">card link</a>
+		</div>
+	</div>
+
+
+	</div>
+  </div>
+ </body>
+</html>
