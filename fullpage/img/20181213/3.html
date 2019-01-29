@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+	<script>
+	/*
+	function test(name) {
+			var ouput = 'hello ' + name;
+			return function() {
+				alert(oupt);
+		}
+	}
+	test('script')();
+	*/
+
+/*
+	function test(name) {
+			var output = 'Hello ' + name;
+			return function() {
+			alert(output);
+		}
+	}
+	var a = test('script');
+	var b = test('html');
+	a();
+	b();
+
+*/
+	var num =1;
+	function addNum(){
+		num++;
+		if (num > 10){
+			num = 1;
+		}
+
+		var gz =
+		document.getElementById('gallery-zone');
+		gz.innerHTML = '<img src="../images/img_' + num + '.jpg">';
+		
+
+		var gallery =
+		document.getElementById('gallery');
+		gallery.setAttribute('src' , '../images/img_ ' + num + '.jpg');
+		console.log(num);
+	}
+
+		function decNum(){
+		num--;
+		if (num < 1){
+			num =10;
+		}
+		
+		var gz =
+		document.getElementById('gallery-zone');
+		gz.innerHTML = '<img src = "../images/img_' + num + '.jpg">';
+		
+		var gallery =
+		document.getElementById('gallery');
+		gallery.setAttribute('src', '../images/img_' + num + '.jpg');
+		console.log(num);
+	}
+	
+	</script>
+ </head>
+ <body>
+  <p id="gallery-zone"><img src="../images/img_1.jpg" id = "gallery" alt=""></p>
+	<p>
+	<button onclick="decNum();">이전</button>
+	<button onclick="addNum();">다음</button>
+	</p>
+ </body>
+</html>
