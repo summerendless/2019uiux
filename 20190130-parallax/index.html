@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+  /* body{background: url(../images/pc01.jpg)fixed;} */
+  /* div.footer{background: url(../images/pc01.jpg)fixed;height: 300px; background-size: cover;} */
+	.scene{height: 100vh;background-size: cover;background-attachment: fixed;}
+	.scene.one{background-image:url(../images/pc01.jpg);}
+	.scene.two{background-image:url(../images/pc02.jpg);}
+	.scene.three{background-image:url(../images/pc03.jpg);}
+	
+	.scene header{max-width:80%; color:white; position: relative;left: 50%;top: 50%;transform:translate(-50%,-50%);text-align: center;font-size: 1.5rem;}
+	.scene header h1{margin-bottom: 1rem;}
+	.scene header h1:after{content:""; border-bottom: 1px solid white; width: 8rem; display: block; margin: 0 auto;margin-top: 1rem;}
+  </style>
+ </head>
+ <body>
+ <!-- section.scene.one*3>header>h1>lorem5^lorem10 -->
+  <section class="scene one">
+ 	<header>
+ 		<h1>Lorem ipsum dolor sit amet.</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, molestias.
+ 	</header>
+ </section>
+ <section class="scene two">
+ 	<header>
+ 		<h1>Quo, culpa aperiam tempora inventore.</h1>Laudantium qui quod quibusdam iste inventore quam reiciendis asperiores quos.
+ 	</header>
+ </section>
+ <section class="scene three">
+ 	<header>
+ 		<h1>Id fugit rerum quod voluptatem?</h1>Sed, eius pariatur minus asperiores eveniet amet beatae excepturi voluptas!
+ 	</header>
+ </section>
+
+ </body>
+</html>
