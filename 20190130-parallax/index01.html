@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/reset.css">
+
+  <style>
+	.sky{background: url(../images/bg1.png)50% 0; width: 100%;height: 500px;position: relative;}
+	.sky article{position: absolute;top: 150px;left: 40%;}
+  </style>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script>
+	$(function(){
+		$('section[data-type="background"]').each(function(){
+			var bg = $(this)
+			$(window).scroll(function(){
+				
+				var yPos =  - ($(window).scrollTop() / bg.data('speed'));
+				console.log("scroll:" + $(window).scrollTop() + " / bg:" + yPos);
+				var coords = '50%' + yPos + 'px';
+				bg.css({backgroundPosition:coords});
+			});
+		});
+	});
+  </script>
+  </head>
+ <body>
+	<section class="sky" data-type="background" data-speed="0.5">
+		<article><img src="../images/balloon.png" alt=""></article>
+	</section>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, dolore aliquid ut atque perspiciatis maxime placeat nostrum repellat vero ipsam pariatur quas ab praesentium enim sequi neque quae similique vel laboriosam ratione incidunt vitae omnis a illum earum. Sint, veritatis, laboriosam, commodi illo similique totam nam eum ex odit tempora distinctio libero temporibus omnis praesentium sit recusandae aut vitae. Accusantium, velit, unde, perspiciatis iure adipisci aspernatur quaerat nesciunt assumenda maxime eos dicta aliquid porro iste hic maiores tempora sit ipsa laudantium mollitia in natus vero aperiam omnis consectetur rem laborum reprehenderit fuga sunt eaque nulla? Nesciunt, dolorem, at, ratione magnam debitis repellat quae voluptatem nemo ipsa vero quisquam nobis eius consequuntur quasi eaque dolores perspiciatis hic cum iure illum minus atque aliquam amet possimus nulla eos illo dignissimos iste pariatur animi. Ipsa, debitis ad quo eius error ab voluptates vitae accusamus quas sed. Corporis, perferendis, impedit, est, reprehenderit reiciendis molestias et debitis tempora officiis eius quidem quod beatae unde maiores dolorum ullam quibusdam architecto molestiae nam qui earum sapiente neque excepturi numquam repellat soluta odit fugit perspiciatis porro delectus. Consectetur, vel, non mollitia illum vero ipsa consequatur distinctio assumenda perspiciatis quaerat quo nam temporibus deleniti rem sequi. Explicabo, neque, maxime!
+	<section class="sky" data-type="background" data-speed="-0.5">
+		<article><img src="../images/balloon.png" alt=""></article>
+	</section>
+ </body>
+</html>
